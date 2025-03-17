@@ -7,17 +7,17 @@ project:
     - "*.ipynb"
     
 website:
-  title: "Balazs Kocsis Blog"
+  title: "Balázs Kocsis Blog"
   favicon: icon.png
   search: 
     location: navbar
     type: overlay
-  bread-crumbs: true
+  bread-crumbs: true 
   twitter-card: true
-  favicon: icon.png
   navbar:
     right:
-      - about.qmd
+      - href: about.qmd
+        text: About
       - href: book-shelf.qmd
         text: Book Shelf
       - href: courses.qmd
@@ -26,12 +26,14 @@ website:
         text: RSS
       - icon: github
         menu:
-        - text: Source Code
-          href:  https://code.com
-        - text: Report a Bug
-          href:  https://bugs.com
+          - text: Source Code
+            href: https://code.com
+          - text: Report a Bug
+            href: https://bugs.com
   page-footer:
+    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
     left: "© 2024 Balázs Kocsis. License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)."
+
 format:
   html:
     theme:
@@ -40,4 +42,3 @@ format:
     css: styles.css
 
 editor: visual
-
