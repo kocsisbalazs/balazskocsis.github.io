@@ -1,12 +1,16 @@
 ---
-title: "Balazs Kocsis Blog"
+title: "Balázs Kocsis Blog"
 listing:
   contents: posts
-  sort: "date desc"
-  type: default
+  fields: [date, title, reading-time]
+  sort: "date"
+  type: table
   categories: true
-  sort-ui: false
-  filter-ui: false
+  feed: true
+  sort-ui: true
+  filter-ui: true
+  date-format: YYYY, MMMM D, dddd
+  page-size: 10
 page-layout: full
 title-block-banner: true
 ---

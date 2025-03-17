@@ -1,16 +1,37 @@
 project:
   type: website
   output-dir: docs
-
+  resources: 
+    - "*.xlsx"
+    - "*.csv"
+    - "*.ipynb"
+    
 website:
   title: "Balazs Kocsis Blog"
+  favicon: icon.png
+  search: 
+    location: navbar
+    type: overlay
+  bread-crumbs: true
+  twitter-card: true
+  favicon: icon.png
   navbar:
     right:
       - about.qmd
+      - href: book-shelf.qmd
+        text: Book Shelf
+      - href: courses.qmd
+        text: Courses
+      - icon: rss
+        text: RSS
       - icon: github
-        href: https://github.com/
-      - icon: twitter
-        href: https://twitter.com
+        menu:
+        - text: Source Code
+          href:  https://code.com
+        - text: Report a Bug
+          href:  https://bugs.com
+  page-footer:
+    left: "© 2024 Balázs Kocsis. License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)."
 format:
   html:
     theme:

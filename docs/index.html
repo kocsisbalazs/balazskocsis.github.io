@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Balazs Kocsis Blog</title>
+<title>Balázs Kocsis Blog – Balazs Kocsis Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./icon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-listing/list.min.js"></script>
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -53,7 +54,6 @@ ul.task-list li input[type="checkbox"] {
     "/",
     "s"
   ],
-  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -78,9 +78,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -129,6 +129,8 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="styles.css">
+<meta name="twitter:title" content="Balázs Kocsis Blog – Balazs Kocsis Blog">
+<meta name="twitter:card" content="summary">
 </head>
 
 <body class="nav-fixed">
@@ -152,16 +154,38 @@ window.Quarto = {
     <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/"> <i class="bi bi-github" role="img">
-</i> 
-<span class="menu-text"></span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./book-shelf.qmd"> 
+<span class="menu-text">Book Shelf</span></a>
   </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com"> <i class="bi bi-twitter" role="img">
-</i> 
-<span class="menu-text"></span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./courses.qmd"> 
+<span class="menu-text">Courses</span></a>
   </li>  
+  <li class="nav-item">
+    <span class="nav-link">
+    <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text">RSS</span>
+    </span>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-github" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-bi-github">    
+        <li>
+    <a class="dropdown-item" href="https://code.com">
+ <span class="dropdown-text">Source Code</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://bugs.com">
+ <span class="dropdown-text">Report a Bug</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -173,7 +197,7 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <h1 class="title">Balazs Kocsis Blog</h1>
+      <h1 class="title">Balázs Kocsis Blog</h1>
                       </div>
   </div>
     
@@ -203,120 +227,79 @@ window.Quarto = {
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="bmV3cyUyQ2NvZGUlMkNhbmFseXNpcw==" data-listing-date-sort="1742166000000" data-listing-file-modified-sort="1742172651913" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
-<div class="thumbnail">
-<p><a href="./posts/post-with-code/index.html" class="no-external"></a></p><a href="./posts/post-with-code/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/post-with-code/image.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/post-with-code/index.html" class="no-external"></a></p>
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-title-sort" data-direction="asc">
+          Title
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
 </div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/post-with-code/index.html" class="no-external">Post With Code</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/post-with-code/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">
-news
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Y29kZQ=='); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('YW5hbHlzaXM='); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/post-with-code/index.html" class="no-external">This is a post with executable code.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/post-with-code/index.html" class="no-external">
-<div class="listing-date">
-Mar 17, 2025
-</div>
-<div class="listing-author">
-Harlow Malloc
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="bmV3cyUyQ2NvZGUlMkNhbmFseXNpcw==" data-listing-date-sort="1742166000000" data-listing-file-modified-sort="1742172729072" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
-<div class="thumbnail">
-<p><a href="./posts/my-new-post/index.html" class="no-external"></a></p><a href="./posts/my-new-post/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/my-new-post/image.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/my-new-post/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/my-new-post/index.html" class="no-external">Post With Code</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/my-new-post/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">
-news
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Y29kZQ=='); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('YW5hbHlzaXM='); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/my-new-post/index.html" class="no-external">This is a post with executable code.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/my-new-post/index.html" class="no-external">
-<div class="listing-date">
-Mar 17, 2025
-</div>
-<div class="listing-author">
-Harlow Malloc
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="bmV3cw==" data-listing-date-sort="1741906800000" data-listing-file-modified-sort="1742172651913" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="32">
-<div class="thumbnail">
-<p><a href="./posts/welcome/index.html" class="no-external"></a></p><a href="./posts/welcome/index.html" class="no-external">
-<p class="card-img-top"><img src="posts/welcome/thumbnail.jpg"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/welcome/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/welcome/index.html" class="no-external">Welcome To My Blog</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/welcome/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">
-news
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/welcome/index.html" class="no-external">This is the first post in a Quarto blog. Welcome!</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/welcome/index.html" class="no-external">
-<div class="listing-date">
-Mar 14, 2025
-</div>
-<div class="listing-author">
-Tristan O’Malley
-</div>
-</a>
-</div>
-</div>
-</div>
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
+</th>
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
+</th>
+<th>
+Reading Time
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-categories="bmV3cw==" data-listing-date-sort="1741906800000" data-listing-file-modified-sort="1742172651913" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="32" data-listing-title-sort="Welcome To My Blog" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-date">2025, March 14, Friday</span>
+</td>
+<td>
+<a href="./posts/welcome/index.html" class="title listing-title">Welcome To My Blog</a>
+</td>
+<td>
+<span class="listing-reading-time">1 min</span>
+</td>
+</tr>
+<tr data-index="1" data-categories="bmV3cyUyQ2NvZGUlMkNhbmFseXNpcw==" data-listing-date-sort="1742166000000" data-listing-file-modified-sort="1742172651913" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9" data-listing-title-sort="Post With Code" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-date">2025, March 17, Monday</span>
+</td>
+<td>
+<a href="./posts/post-with-code/index.html" class="title listing-title">Post With Code</a>
+</td>
+<td>
+<span class="listing-reading-time">1 min</span>
+</td>
+</tr>
+<tr data-index="2" data-categories="bmV3cyUyQ2NvZGUlMkNhbmFseXNpcw==" data-listing-date-sort="1742166000000" data-listing-file-modified-sort="1742172729072" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9" data-listing-title-sort="Post With Code" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-date">2025, March 17, Monday</span>
+</td>
+<td>
+<a href="./posts/my-new-post/index.html" class="title listing-title">Post With Code</a>
+</td>
+<td>
+<span class="listing-reading-time">1 min</span>
+</td>
+</tr>
+</tbody>
+</table>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
@@ -739,6 +722,19 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2024 Balázs Kocsis. License: <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>.</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 
