@@ -1,0 +1,30 @@
+---
+title: "Book Shelf"
+description: "No gatekeeping—if I find a book with valuable knowledge, I'm gonna list it here!"
+format: html
+---
+
+## 
+
+| Title           | Collumn          | Description        |
+|-----------------|------------------|--------------------|
+| Lorem ipsum     | Dolor sit amet   | Consectetur        |
+| Adipiscing elit | Sed do eiusmod   | Tempor incididunt  |
+| Ut labore       | Et dolore magna  | Aliqua             |
+| Ut enim         | Ad minim veniam  | Quis nostrud       |
+| Exercitation    | Ullamco laboris  | Nisi ut aliquip    |
+| Ex ea commodo   | Consequat        | Duis aute irure    |
+| Dolor in        | Reprehenderit    | Voluptate velit    |
+| Esse cillum     | Dolore eu fugiat | Nulla pariatur     |
+| Excepteur       | Sint occaecat    | Cupidatat non      |
+| Proident        | Sunt in culpa    | Qui officia        |
+| Deserunt        | Mollit anim      | Id est laborum     |
+| Tempor          | Incididunt       | Ut labore          |
+| Consectetur     | Adipiscing elit  | Sed do             |
+| Magna aliqua    | Enim ad minim    | Veniam quis        |
+| Nostrud         | Exercitation     | Ullamco laboris    |
+| Dolore magna    | Aliqua enim      | Ad minim           |
+| Quis nostrud    | Exercitation     | Ullamco laboris    |
+| Commodo         | Consequat        | Duis aute          |
+| Reprehenderit   | Voluptate velit  | Esse cillum        |
+| Nulla pariatur  | Excepteur sint   | Occaecat cupidatat |

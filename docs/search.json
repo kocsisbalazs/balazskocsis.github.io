@@ -1,30 +1,23 @@
 [
   {
-    "objectID": "posts/my-new-post/index.html",
-    "href": "posts/my-new-post/index.html",
-    "title": "Post With Code",
+    "objectID": "book-shelf.html",
+    "href": "book-shelf.html",
+    "title": "Book Shelf",
     "section": "",
-    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+    "text": "Title\nCollumn\nDescription\n\n\n\n\nLorem ipsum\nDolor sit amet\nConsectetur\n\n\nAdipiscing elit\nSed do eiusmod\nTempor incididunt\n\n\nUt labore\nEt dolore magna\nAliqua\n\n\nUt enim\nAd minim veniam\nQuis nostrud\n\n\nExercitation\nUllamco laboris\nNisi ut aliquip\n\n\nEx ea commodo\nConsequat\nDuis aute irure\n\n\nDolor in\nReprehenderit\nVoluptate velit\n\n\nEsse cillum\nDolore eu fugiat\nNulla pariatur\n\n\nExcepteur\nSint occaecat\nCupidatat non\n\n\nProident\nSunt in culpa\nQui officia\n\n\nDeserunt\nMollit anim\nId est laborum\n\n\nTempor\nIncididunt\nUt labore\n\n\nConsectetur\nAdipiscing elit\nSed do\n\n\nMagna aliqua\nEnim ad minim\nVeniam quis\n\n\nNostrud\nExercitation\nUllamco laboris\n\n\nDolore magna\nAliqua enim\nAd minim\n\n\nQuis nostrud\nExercitation\nUllamco laboris\n\n\nCommodo\nConsequat\nDuis aute\n\n\nReprehenderit\nVoluptate velit\nEsse cillum\n\n\nNulla pariatur\nExcepteur sint\nOccaecat cupidatat"
   },
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
+    "objectID": "book-shelf.html#section",
+    "href": "book-shelf.html#section",
+    "title": "Book Shelf",
     "section": "",
-    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "Title\nCollumn\nDescription\n\n\n\n\nLorem ipsum\nDolor sit amet\nConsectetur\n\n\nAdipiscing elit\nSed do eiusmod\nTempor incididunt\n\n\nUt labore\nEt dolore magna\nAliqua\n\n\nUt enim\nAd minim veniam\nQuis nostrud\n\n\nExercitation\nUllamco laboris\nNisi ut aliquip\n\n\nEx ea commodo\nConsequat\nDuis aute irure\n\n\nDolor in\nReprehenderit\nVoluptate velit\n\n\nEsse cillum\nDolore eu fugiat\nNulla pariatur\n\n\nExcepteur\nSint occaecat\nCupidatat non\n\n\nProident\nSunt in culpa\nQui officia\n\n\nDeserunt\nMollit anim\nId est laborum\n\n\nTempor\nIncididunt\nUt labore\n\n\nConsectetur\nAdipiscing elit\nSed do\n\n\nMagna aliqua\nEnim ad minim\nVeniam quis\n\n\nNostrud\nExercitation\nUllamco laboris\n\n\nDolore magna\nAliqua enim\nAd minim\n\n\nQuis nostrud\nExercitation\nUllamco laboris\n\n\nCommodo\nConsequat\nDuis aute\n\n\nReprehenderit\nVoluptate velit\nEsse cillum\n\n\nNulla pariatur\nExcepteur sint\nOccaecat cupidatat"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Balázs Kocsis Blog",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nReading Time\n\n\n\n\n\n\n2025, March 14, Friday\n\n\nWelcome To My Blog\n\n\n1 min\n\n\n\n\n2025, March 17, Monday\n\n\nPost With Code\n\n\n1 min\n\n\n\n\n2025, March 17, Monday\n\n\nPost With Code\n\n\n1 min\n\n\n\n\n\nNo matching items"
+    "text": "Date\n\n\nTitle\n\n\nReading Time\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

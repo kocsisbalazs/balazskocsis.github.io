@@ -20,25 +20,21 @@ website:
         text: About
       - href: book-shelf.qmd
         text: Book Shelf
-      - href: courses.qmd
-        text: Courses
       - icon: rss
         text: RSS
+        href: index.xml
       - icon: github
         menu:
           - text: Source Code
-            href: https://code.com
+            href: https://github.com/kocsisbalazs/kocsisbalazs.github.io
           - text: Report a Bug
-            href: https://bugs.com
+            href: https://github.com/kocsisbalazs/kocsisbalazs.github.io/issues
   page-footer:
-    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
-    left: "© 2024 Balázs Kocsis. License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)."
+    center: "© 2024 Balázs Kocsis. License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)."
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: default
     css: styles.css
 
 editor: visual
